@@ -1,0 +1,177 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b3d9b3;
+    width: 100vw;
+    height: 100vh;
+}
+.gameContainer{
+    width: 100vw;
+}
+.gameRuleContainer{
+    width: 50vw;
+    margin: auto;
+    margin-top: 15%;
+    position: relative;
+    line-height: 180%;
+}
+
+#startButton{
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 50px;
+    background-color: #66b366;
+    margin-top: 10%;
+}
+
+.gameOver, .scoreCount{
+    text-align: center;
+}
+
+
+body{
+    overflow: hidden ;
+}
+
+.text{
+    margin-top: 15%;
+}
+
+.jerry{
+    background-image: url(jerry.png);
+    background-repeat: no-repeat;
+    width:200px;
+    height: 150px;
+    /* border: 1px solid black; */
+    background-size: contain;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+}
+
+.tom{
+    background-image: url(tomR.png);
+    background-repeat: no-repeat;
+    /* border: 1px solid black; */
+    background-size: contain;
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    bottom: 20%;
+    left: 70%;
+}
+
+.btnStyle{
+    border: 1px solid #284428;
+    border-radius: 240px;
+}
+
+.gameOverCharacter{
+    background-image: url(fight.png);
+    background-repeat: no-repeat;
+    /* border: 1px solid black; */
+    background-size: contain;
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    left: 40%;
+    bottom: 30%;
+}
+
+.btn_container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    bottom: 11%;
+    /* left:49%; */
+    width: 100px;
+    height: 50px;
+    background-color: #66b366;
+}
+
+.gameOver{
+    visibility: hidden;
+}
+
+.animateJerry{
+    animation: jerry 0.7s linear;
+}
+.animateTom{
+    animation: tom 1s linear infinite;
+}
+
+
+/* .btn_refresh{
+    left: 20%;
+}
+.btn_jump{
+    left: 65%;
+} */
+
+
+@keyframes tom{
+     0%{
+         left: 100vw;
+     }
+     100%{
+         left: -10vw;
+     }
+}
+
+@keyframes jerry{
+    0%{
+        bottom: 35%;
+    }
+    50%{
+        bottom: 600px;
+    }
+    100%{
+        bottom: 35%;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .gameRuleContainer{
+        width: 80vw;
+        margin-top: 50%;
+    }
+    .jerry{
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        bottom: 35%;
+        left: 7 0px;
+    }
+    .tom{
+        width: 120px;
+        height: 100px;
+        bottom: 35%;
+        left: 60vw; 
+    }
+    .gameOverCharacter{
+        width: 200px;
+        height: 200px;
+        bottom: 35%;
+        left: 30vw; 
+    }
+    .btn{
+        bottom: 20%;
+        width: 70px;
+        height: 40px;
+    }
+}
