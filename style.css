@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +5,12 @@
 }
 
 body{
-    background-color: #b3d9b3;
+    background-color: #4da6a6;
     width: 100vw;
     height: 100vh;
+    overflow: hidden ;
 }
-.gameContainer{
-    width: 100vw;
-}
+
 .gameRuleContainer{
     width: 50vw;
     margin: auto;
@@ -26,17 +24,15 @@ body{
     left: 40%;
     width: 100px;
     height: 50px;
-    background-color: #66b366;
+    background-color: #80c0c0;
     margin-top: 10%;
 }
 
+.gameContainer{
+    width: 100vw;
+}
 .gameOver, .scoreCount{
     text-align: center;
-}
-
-
-body{
-    overflow: hidden ;
 }
 
 .text{
@@ -71,6 +67,26 @@ body{
     border: 1px solid #284428;
     border-radius: 240px;
 }
+.btn{
+    position: absolute;
+    bottom: 11%;
+    /* left:49%; */
+    width: 100px;
+    height: 50px;
+    background-color: #80c0c0;
+}
+
+.btn_refresh{
+    left: 60%;
+}
+.btn_jump{
+    left: 20%;
+}
+
+
+.gameOver{
+    visibility: hidden;
+}
 
 .gameOverCharacter{
     background-image: url(fight.png);
@@ -84,35 +100,16 @@ body{
     bottom: 30%;
 }
 
-.btn_container{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-around;
-}
-
-.hidden{
-    display: none;
-}
-
-.btn{
-    position: absolute;
-    bottom: 11%;
-    /* left:49%; */
-    width: 100px;
-    height: 50px;
-    background-color: #66b366;
-}
-
-.gameOver{
-    visibility: hidden;
-}
-
 .animateJerry{
     animation: jerry 0.7s linear;
 }
 .animateTom{
     animation: tom 1s linear infinite;
 }
+.hidden{
+    display: none;
+}
+
 
 
 /* .btn_refresh{
@@ -171,7 +168,7 @@ body{
     }
     .btn{
         bottom: 20%;
-        width: 70px;
-        height: 40px;
+        width: 90px;
+        height: 50px;
     }
 }
