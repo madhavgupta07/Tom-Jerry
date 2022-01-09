@@ -4,6 +4,7 @@ const tom = document.querySelector(".tom");
 const jerryCaught = document.querySelector(".jerryCaught");
 const scoreCount = document.querySelector(".scoreCount");
 const audio = document.getElementById("myAudio");
+
 let score = 0;
 let cross = true;
 
@@ -19,7 +20,7 @@ document.onkeydown = function (e) {
       jerry.classList.remove("animateJerry");
     }, 700);
   }
-}; 
+};
 
 let duringGameAudio = () => {
   gameAudio.play();
@@ -28,6 +29,7 @@ let duringGameAudio = () => {
 let myInterval = setInterval(duringGameAudio, 100);
 
 function buttonClick(e) {
+  jumpAudio.play();
   jerry.classList.add("animateJerry");
   setTimeout(() => {
     jerry.classList.remove("animateJerry");
@@ -70,5 +72,3 @@ setInterval(() => {
   }
 }, 100);
 duringGameAudio();
-
-
